@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — AA Loyal Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="watermark">
+  <img src="logo.png" alt="" />
+</div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="logo.png" alt="AA Loyal Inc." class="nav-logo-img" />
+<div class="nav-separator"></div>
+<div class="nav-identity">
+  <span class="nav-company">AA Loyal Inc.</span>
+  <span class="nav-tagline">Inbound &amp; Outbound Solutions</span>
+</div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-line"></div>
+    <p class="hero-eyebrow">Reach out</p>
+    <h1 class="hero-title">Let's talk<br><em>business.</em></h1>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section reveal">
+    <div class="contact-inner">
+
+      <!-- LEFT: Info -->
+      <div class="contact-left">
+        <p class="section-label">Get in touch</p>
+        <h2 class="section-title" style="margin-bottom: 32px;">We'd love to<br>hear from you.</h2>
+        <p class="about-body">If you're looking to strengthen your outreach, improve your communication flow, and create more opportunities for growth — we're here to support you.</p>
+        <p class="about-body">Drop us a message using the form, or connect with us directly on LinkedIn.</p>
+        <a href="https://www.linkedin.com/company/aa-loyal/" target="_blank" class="btn-gold" style="margin-top: 32px; display: inline-block;">Connect on LinkedIn</a>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="contact-right">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Your company name" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your business and what you need..." required></textarea>
+          </div>
+          <button type="submit" class="btn-gold" id="submit-btn" style="width: 100%; text-align: center;">Send Message</button>
+          <div id="form-success" style="display: none; margin-top: 24px; padding: 20px; border: 0.5px solid var(--gold-dim); text-align: center;">
+            <p style="color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 20px; margin-bottom: 8px;">Message received.</p>
+            <p style="color: var(--muted); font-size: 13px;">Thank you for reaching out — we'll be in touch shortly.</p>
+          </div>
+          <div id="form-error" style="display: none; margin-top: 24px; padding: 20px; border: 0.5px solid var(--dimmer); text-align: center;">
+            <p style="color: var(--muted); font-size: 13px;">Something went wrong. Please try again or email us directly.</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">AA LOYAL INC.</div>
+    <div class="footer-copy">© 2026 AA Loyal Inc. All rights reserved.</div>
+  </footer>
+
+  <script src="effects.js"></script>
+</body>
+</html>
